@@ -76,3 +76,7 @@ Methods are functions that operate on particular types. They have a receiver cla
 Interfaces are types that declare sets of methods. Similarly to interfaces in other languages, they have no implementation. 
 But Interfaces in Go are very different from, say, Java interfaces. You don’t explicitly say a data type implements an interface; rather, your data types must implement all of the methods that the interface defines, and the compiler checks to see if assignments to variables of the interface type are valid.
 
+##### struct_embedding.go
+
+The theory behind embedding is pretty straightforward: by including a type as a nameless parameter within another type, the exported parameters and methods defined on the embedded type are accessible through the embedding type. 
+So that we don't need to re-implement the functionalities of the embedded types for the embedding type.
