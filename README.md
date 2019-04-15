@@ -50,3 +50,29 @@ range iterates over elements in a variety of data structures.
 
 Functions are central in Go. Go requires explicit returns. Call a function just as you’d expect, with name(args).
 Go has built-in support for multiple return values. This feature is used often in idiomatic Go, for example to return both result and error values from a function.
+
+##### variadic_functions.go
+
+Variadic functions can be called with any number of trailing arguments. For example, fmt.Println is a common variadic function.
+
+##### closures.go
+
+Go supports anonymous functions, which can form closures. Anonymous functions are useful when you want to define a function inline without having to name it.
+
+##### pointers.go
+
+Go supports pointers, allowing you to pass references to values and records within your program.
+
+##### structs.go
+
+Go’s structs are typed collections of fields. They’re useful for grouping data together to form records. Structs are mutable. Structs hold only state and no behavior.
+
+##### methods.go
+
+Methods are functions that operate on particular types. They have a receiver clause that mandates what type they operate on. Here are some methods for our example.
+
+##### interfaces.go
+
+Interfaces are types that declare sets of methods. Similarly to interfaces in other languages, they have no implementation. 
+But Interfaces in Go are very different from, say, Java interfaces. You don’t explicitly say a data type implements an interface; rather, your data types must implement all of the methods that the interface defines, and the compiler checks to see if assignments to variables of the interface type are valid.
+
